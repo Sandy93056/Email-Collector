@@ -1,0 +1,16 @@
+import re
+
+str = ''' boleh di kirim ke email saya ekoprasetyo.crb@outlook.com tks...
+boleh minta kirim ke db.maulana@gmail.com. 
+dee.wien@yahoo.com. .
+deninainggolan@yahoo.co.id Senior Quantity Surveyor
+Fajar.rohita@hotmail.com, terimakasih bu Cindy Hartanto
+firmansyah1404@gmail.com saya mau dong bu cindy
+fransiscajw@gmail.com 
+Hi Cindy ...pls share the Salary guide to donny_tri_wardono@yahoo.co.id thank a
+
+Hello from priyankv@gmail.com to python@gmail.com, datascience@@gmail.com . '''
+
+email = re.findall(r"[0-9a-zA-Z._+%]+@[0-9a-zA-Z._+%]+[.][a-zA-Z.0-9]+", str)
+
+print(email)
